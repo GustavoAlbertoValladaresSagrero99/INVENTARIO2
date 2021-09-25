@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de inventario ordenado por codigo</title>
+</head>
+<body>
+
+    <style>
+        #msj
+        {
+            text-align: center;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #000;
+            font-size: 18px;
+            margin: 15px;
+        }
+    </style>
+
+    <h1>Control de inventario ordenado por codigo</h1>
+    <h2>Alumno: Gustavo Alberto Valladares Sagrero - 3H</h2>
+
+    <div id="msj">
+        Mensaje de la tarea.
+    </div>
+
+    <form>
+        <label for="code">Codigo</label>
+        <input type="number" name="" id="code">
+        <label for="name">Nombre</label>
+        <input type="text" name="" id="name">
+        <label for="unit">Cantidad</label>
+        <input type="number" name="" id="unit">
+        <label for="cost">Costo</label>
+        <input type="number" name="" id="cost">
+        <button type="button" id="addButton">Agregar</button>
+        <div>
+            <input type="text" id="codeSelection" placeholder="Ingrese codigo">
+            <button type="button" id="search">Buscar</button>
+            <button type="button" id="delete">Eliminar</button>
+        </div>
+    </form>
+
+    <div class="listar">
+        <button id="listar">Listar</button>
+        <button id="listarInv">Listar Invertido</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Costo</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+
+        </tbody>
+    </table>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
